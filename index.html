@@ -22,18 +22,24 @@
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn"><i class="fa fa-bars"
                         style="color:#002147"></i></label>
-                <label class="logo"> <span style="color:#166cce;font-weight:bolder">S</span>hruti</label>
+                <label class="logo"> <span
+                        style="color:#166cce;font-weight:bolder">S</span>hruti</label>
                 <ul>
-                    <li><a href="#home" class="active nav-link" onclick="removeActiveClass('nav-link',event)">Home</a></li>
-                    <li><a href="#about" class="nav-link" onclick="removeActiveClass('nav-link',event)">About</a></li>
-                    <li><a href="#services" class="nav-link" onclick="removeActiveClass('nav-link',event)">Services</a></li>
-                    <li><a href="#projects" class="nav-link" onclick="removeActiveClass('nav-link',event)">Portfolio</a></li>
-                    <li><a href="#contact-me" class="nav-link" onclick="removeActiveClass('nav-link',event)">Contact</a></li>
+                    <li><a href="#home" class="active nav-link"
+                            onclick="removeActiveClass('nav-link',event)">Home</a></li>
+                    <li><a href="#about" class="nav-link"
+                            onclick="removeActiveClass('nav-link',event)">About</a></li>
+                    <li><a href="#services" class="nav-link"
+                            onclick="removeActiveClass('nav-link',event)">Services</a></li>
+                    <li><a href="#projects" class="nav-link"
+                            onclick="removeActiveClass('nav-link',event)">Portfolio</a></li>
+                    <li><a href="#contact-me" class="nav-link"
+                            onclick="removeActiveClass('nav-link',event)">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text" id="home">
-                <span class="profession-text">Full Stack Developer | Competitive
-                    Programmer</span>
+                <span class="profession-text">Full Stack Developer
+                 </span>
                 <span class="intro-text">Hi, I'm Shruti
                 </span>
                 <div class="intro-text">Gupta From India</div>
@@ -71,7 +77,7 @@
             <section class="mybackground-section" id="about">
                 <div class="about-nav">
                     <a class="about-nav-link active" id="skill-link"
-                        onclick="showDescription('skill',event)">  Skills </a>
+                        onclick="showDescription('skill',event)"> Skills </a>
                     <a class="about-nav-link" id="experience-link"
                         onclick="showDescription('experience',event)">Experience</a>
                     <a class="about-nav-link" id="education-link"
@@ -125,8 +131,6 @@
                             <h3 class="skill-title">ASP.NET Core MVC</h3>
                         </div>
                     </div>
-
-                  
 
                 </div>
                 <div class="about-nav-text experience-description"
@@ -359,26 +363,61 @@
                             style="color:red contact-icon"></i> +91 1234567890
                     </span>
                     <div class="social-media-links">
-                        <i class="fa fa-facebook contact-icon" style="color:blue"></i>
-                        <i class="fa fa-twitter contact-icon" style="color:rgb(137, 137, 249)"></i>
+                        <i class="fa fa-facebook contact-icon"
+                            style="color:blue"></i>
+                        <i class="fa fa-twitter contact-icon"
+                            style="color:rgb(137, 137, 249)"></i>
                         <i class="fa fa-linkedin contact-icon"
                             aria-hidden="true" style="color:rgb(25, 70, 234)"></i>
                     </div>
-                    <button class="btn resume-link">Download CV</button>
+                    <!-- <button class="btn resume-link">Download CV</button> -->
                 </div>
-                <div class="contact-form">
-                    <input type="text" class="client-name contact-box"
-                        placeholder="Enter your name">
-                    <input type="email" name id
-                        class="client-mail-id contact-box"
-                        placeholder="Enter your email-id">
-                    <input type="text" class="client-message contact-box"
-                        placeholder="Enter your message">
-                    <button class="btn" class="submit-message">Submit</button>
+                <div class="contact-form-container">
+
+                    <form name="submit-to-google-sheet" class="contact-form">
+                        <input type="text" class="client-name contact-box"
+                            name="name" placeholder="Enter your name">
+                        <input type="email" name="email"
+                            class="client-mail-id contact-box"
+                            placeholder="Enter your email-id">
+                        <textarea type="text" name="message"
+                            class="client-message contact-box"
+                            placeholder="Enter your message"></textarea>
+                        <button class="btn" class="submit-message">Submit</button>
+                        <span class="success-message"></span>
+                    </form>
                 </div>
             </div>
         </section>
+        <section class="footer-section">
+            <footer class="footer-container">
+                <div class="footer-text">
+                    Copyright &copy; 2023 @Shruti Gupta | All Rights Reserved
+                </div>
+            </footer>
+        </section>
 
         <script src="index.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzJY2NXOoUXOWPF1Wfw7BWDorcUed9eSgH3UUVsc2GrFcXFAWJSZH377e11SD-bZOM/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg='Message sent successfully!';
+            let messageBox=document.getElementsByClassName('success-message')[0];
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => 
+                
+                messageBox.innerHTML=msg,
+                setTimeout(() => {
+                    messageBox.innerHTML='';
+                    form.reset( );
+                }, 5000),
+               
+            
+                )
+                .catch(error => console.error('Error!', error.message))
+            });
+          </script>
     </body>
 </html>

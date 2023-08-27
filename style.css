@@ -4,8 +4,11 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
     font-weight: 400;
+    font-family:'Ubuntu';
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
 
 }
 
@@ -48,7 +51,7 @@ body {
 .project-body {
 
     font-size: 1.13rem;
-
+    
 }
 
 
@@ -56,15 +59,14 @@ body {
 .profession-text {
     font-size: 1rem;
     margin-bottom: 0.5em;
-    font-family: 'Lora', serif;
     font-weight: 300;
+    font-weight: bold;
     /* color: #5f8fb9; */
 
 }
 
 .intro-text {
     font-size: 3rem;
-    font-family: 'Lora', serif;
     font-weight: 900;
 
 }
@@ -218,6 +220,7 @@ a.active {
     margin-bottom: 1em;
     font-family: 'Lora';
     text-align: center;
+    font-weight:bold;
 }
 
 .about-text {
@@ -277,8 +280,8 @@ a.active {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    right: calc(100% + 12px);
-    top: 0;
+    right: calc(100% + 11px);
+    top: -1.6px;
     background: #11a372;
     border: 1px solid black;
 }
@@ -323,11 +326,7 @@ a.active {
 
 }
 
-.skill-title {
 
-    font-weight: 700;
-
-}
 
 
 /*************Project-section**********/
@@ -372,6 +371,7 @@ a.active {
     border: 1px solid white;
     color: white;
     font-size: 1rem;
+    cursor:pointer
 }
 
 .project-demo:hover,
@@ -386,6 +386,7 @@ a.active {
 .contact-section {
     background: aliceblue;
     color: #002147;
+   
 
 
 }
@@ -398,22 +399,35 @@ a.active {
     padding-bottom: 4em;
     margin: 0 auto;
     width: 80%;
-
+    height:90%;
+    
 }
 
 .contact-info,
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
     width: 50%;
+   
 }
+
 
 .contact-form {
 
     justify-content: flex-start;
     align-items: flex-start;
+    /* border:2px solid red; */
+    width:100%;
+    height:100%;
+}
+.contact-info{
+    width:40%;
+}
+.contact-form-container{
+
+    width:70%;
 }
 
 .mail-id,
@@ -427,17 +441,20 @@ a.active {
 .contact-box {
 
     width: 90%;
-    height: 25%;
+    height: 30px;
     padding: 0 1em;
     background-color: #f2f2ff;
     font-size: 1.13rem;
     border: 1px solid #002147;
     margin-bottom: 0.9em;
+    border-radius:5px;
 }
 
 .client-message {
 
-    height: 60%;
+    height: 130px;
+    text-align: start;
+    line-height:1.5;
 
 }
 
@@ -472,6 +489,14 @@ a.active {
     height: 15px;
     margin-top: 3px;
     z-index: 400;
+}
+
+/* success-message */
+
+.success-message{
+
+    color:green;
+    display:block;
 }
 
 /* service-section styling started */
@@ -515,6 +540,22 @@ a.active {
 
 }
 
+/* footer section */
+
+.footer-text{
+
+    color:white;
+
+}
+
+.footer-container{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em 0;
+
+}
 
 @media screen and (max-width: 900px) {
 
@@ -570,28 +611,16 @@ a.active {
     }
 }
 
-@media (max-width:400px) {
-    .skill-card {
 
-        width: 50%;
 
-    }
-
-    .social-media-links {
-
-        width: 40%;
-
-    }
-}
-
-@media screen and (max-width: 518px) {
+@media screen and (max-width: 518px) and (min-width:400px ) {
 
     .intro-text {
         font-size: 2rem;
     }
 
     .profession-text {
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: white;
         font-weight: bolder;
     }
@@ -657,7 +686,7 @@ a.active {
 
     .about-nav a {
 
-        margin: 0 1em;
+        margin: 0 0.5em;
     }
 
     .service-card {
@@ -666,18 +695,30 @@ a.active {
     }
 
 }
-
-@media screen and (max-width:450px) {
-
-    .about-nav a {
-
-
-        margin: 0 0.4em;
-        font-size: 1.3rem;
+@media screen and (max-width:400px) {
+    .skill-card {
+        width: 50%;
     }
 
+    .social-media-links {
+        width: 40%;
+    }
+    
+    .profession-text{
+        font-size:0.9rem;
+    }
+    .intro-text{
+        font-size:1.8rem;
+    }
+    .about-nav a{
+        font-size:1.2rem;
+    }
 }
-
+@media screen and (max-width:320px) {
+   .about-nav a{
+       font-size:1rem;
+   }
+}
 @media screen and (max-width:700px) {
 
     .contact-container {

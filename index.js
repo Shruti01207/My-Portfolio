@@ -13,16 +13,7 @@ function showDescription(type, e) {
 
     let aboutItems = document.getElementsByClassName('about-nav-text');
     removeActiveClass('about-nav-link',e);
-    // let navLinks = document.getElementsByClassName('about-nav-link');
-    // let navLink = e.srcElement;
-
-    // for (let i = 0; i < navLinks.length; i++) {
-    //     console.log(navLinks.length);
-    //     navLinks[i].classList.remove('active');
-    //     console.log("class list", navLinks[i].id, navLinks[i].classList);
-    // }
-    // navLink.className += ' active';
-
+    
     for (let i = 0; i < aboutItems.length; i++) {
 
         if (type != aboutItems[i].id) {
