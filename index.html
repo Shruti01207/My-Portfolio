@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital@1&family=Ubuntu:wght@100&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital@1&family=Ubuntu:wght@300&display=swap"
+            rel="stylesheet">
+        <title>Portfolio | Shruti</title>
+
+    </head>
+    <body>
+
+        <header class="header">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn"><i class="fa fa-bars"
+                        style="color:#002147"></i></label>
+                <label class="logo"> <span style="color:#166cce;font-weight:bolder">S</span>hruti</label>
+                <ul>
+                    <li><a href="#home" class="active nav-link" onclick="removeActiveClass('nav-link',event)">Home</a></li>
+                    <li><a href="#about" class="nav-link" onclick="removeActiveClass('nav-link',event)">About</a></li>
+                    <li><a href="#services" class="nav-link" onclick="removeActiveClass('nav-link',event)">Services</a></li>
+                    <li><a href="#projects" class="nav-link" onclick="removeActiveClass('nav-link',event)">Portfolio</a></li>
+                    <li><a href="#contact-me" class="nav-link" onclick="removeActiveClass('nav-link',event)">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text" id="home">
+                <span class="profession-text">Full Stack Developer | Competitive
+                    Programmer</span>
+                <span class="intro-text">Hi, I'm Shruti
+                </span>
+                <div class="intro-text">Gupta From India</div>
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="about-section">
+                <div class="about-container ">
+                    <div class="about-main">
+                        <img src="./images/My pic.jpeg" alt
+                            class="about-image">
+                        <div class="about-text">
+                            <h1 class="about-title">About me</h1>
+                            <p>Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                                Unde doloremque ea alias, praesentium autem
+                                ratione
+                                sequi eos voluptas magni, eveniet assumenda
+                                veritatis
+                                tempore neque corporis optio esse necessitatibus
+                                voluptate iste qui perferendis? Consequuntur
+                                laboriosam
+                                esse fugit incidunt veritatis sit quo
+                                perspiciatis
+                                perferendis impedit? Facere, sequi perspiciatis.
+                                Sapiente, quo dicta. Modi?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="mybackground-section" id="about">
+                <div class="about-nav">
+                    <a class="about-nav-link active" id="skill-link"
+                        onclick="showDescription('skill',event)">  Skills </a>
+                    <a class="about-nav-link" id="experience-link"
+                        onclick="showDescription('experience',event)">Experience</a>
+                    <a class="about-nav-link" id="education-link"
+                        onclick="showDescription('education',event)">Education</a>
+                </div>
+                <div class="about-nav-text skill-description" id="skill">
+
+                    <div class="logo-container">
+                        <div class="skill-card">
+                            <img src="./vectors/C++ logo.svg" alt>
+                            <h3 class="skill-title">C/C++</h3>
+                        </div>
+
+                        <div class="skill-card">
+                            <img src="./vectors/icons8-html-100.png"
+                                alt="html-logo">
+                            <h3 class="skill-title">HTML</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./vectors/css-icon (1).svg" alt="css-logo">
+                            <h3 class="skill-title">CSS</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./vectors/javascript logo.svg"
+                                alt="javascript-logo">
+                            <h3 class="skill-title">Javascript</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./vectors/angular-icon (3).svg"
+                                alt="angular-icon">
+                            <h3 class="skill-title">Angular</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./vectors/Bootstrap_logo.svg (1).png"
+                                alt="bootstrap-logo">
+                            <h3 class="skill-title">Bootstrap</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./vectors/microsoft-sql-server-1 (1).svg"
+                                alt="sql-server-logo">
+                            <h3 class="skill-title">SQL Server</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./vectors/Entity framework core.png"
+                                alt="EF-core-logo">
+                            <h3 class="skill-title">Entity Framework Core</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./vectors/NET_Core_Logo.svg (1).png"
+                                alt="dot-net-logo">
+                            <h3 class="skill-title">ASP.NET Core MVC</h3>
+                        </div>
+                    </div>
+
+                  
+
+                </div>
+                <div class="about-nav-text experience-description"
+                    id="experience">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="duration">2020-2024</div>
+                            <div class="title">Bachelor of Technology in Civil
+                                Engineering</div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Libero corporis doloremque deleniti
+                                accusamus
+                                dicta cumque commodi tempore pariatur
+                                dignissimos
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="duration">2020-2024</div>
+                            <div class="title">Bachelor of Technology in Civil
+                                Engineering</div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Libero corporis doloremque deleniti
+                                accusamus
+                                dicta cumque commodi tempore pariatur
+                                dignissimos
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="about-nav-text education-description"
+                    id="education">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="duration">2020-2024</div>
+                            <div class="title">Bachelor of Technology in Civil
+                                Engineering</div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Libero corporis doloremque deleniti
+                                accusamus
+                                dicta cumque commodi tempore pariatur
+                                dignissimos
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="duration">2020-2024</div>
+                            <div class="title">Intermediate</div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Libero corporis doloremque deleniti
+                                accusamus
+                                dicta cumque commodi tempore pariatur
+                                dignissimos
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="duration">2020-2024</div>
+                            <div class="title">Intermediate</div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Libero corporis doloremque deleniti
+                                accusamus
+                                dicta cumque commodi tempore pariatur
+                                dignissimos
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="project-section" id="projects">
+                <h1 class="project-section-title">My Projects</h1>
+
+                <div class="project-container">
+                    <div class="project-info">
+                        <h2 class="project-title">Project 1</h2>
+                        <button type="button" class="project-demo">Visit Site</button>
+                    </div>
+                    <div class="project-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Ipsum autem natus maxime ratione repellat id
+                            temporibus in cum ea et.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cumque odio velit numquam quod dicta voluptas
+                            aspernatur eligendi possimus. Voluptatibus ipsam est
+                            similique iusto laborum! Vero maxime eveniet iure
+                            neque explicabo error assumenda delectus id,
+                            deleniti, illo dicta corrupti officia. Amet quaerat
+                            ut doloribus aperiam deleniti suscipit rerum animi
+                            non fugit!</p>
+                    </div>
+                </div>
+                <div class="project-container ">
+                    <div class="project-info">
+                        <h2 class="project-title">Project 1</h2>
+                        <button type="button" class="project-demo">Visit Site</button>
+                    </div>
+                    <div class="project-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Ipsum autem natus maxime ratione repellat id
+                            temporibus in cum ea et.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cumque odio velit numquam quod dicta voluptas
+                            aspernatur eligendi possimus. Voluptatibus ipsam est
+                            similique iusto laborum! Vero maxime eveniet iure
+                            neque explicabo error assumenda delectus id,
+                            deleniti, illo dicta corrupti officia. Amet quaerat
+                            ut doloribus aperiam deleniti suscipit rerum animi
+                            non fugit!</p>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="project-info">
+                        <h2 class="project-title">UI/UX Project</h2>
+                        <button type="button" class="project-demo">Visit Site</button>
+                    </div>
+                    <div class="project-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Ipsum autem natus maxime ratione repellat id
+                            temporibus in cum ea et.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cumque odio velit numquam quod dicta voluptas
+                            aspernatur eligendi possimus. Voluptatibus ipsam est
+                            similique iusto laborum! Vero maxime eveniet iure
+                            neque explicabo error assumenda delectus id,
+                            deleniti, illo dicta corrupti officia. Amet quaerat
+                            ut doloribus aperiam deleniti suscipit rerum animi
+                            non fugit!</p>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="project-info">
+                        <h2 class="project-title">Amazon Clone</h2>
+                        <button type="button" class="project-demo">Visit Site</button>
+                    </div>
+                    <div class="project-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Ipsum autem natus maxime ratione repellat id
+                            temporibus in cum ea et.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Cumque odio velit numquam quod dicta voluptas
+                            aspernatur eligendi possimus. Voluptatibus ipsam est
+                            similique iusto laborum! Vero maxime eveniet iure
+                            neque explicabo error assumenda delectus id,
+                            deleniti, illo dicta corrupti officia. Amet quaerat
+                            ut doloribus aperiam deleniti suscipit rerum animi
+                            non fugit!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service-section" id="services">
+                <h1 class="service-section-title">My Services</h1>
+                <div class="service-cards-container">
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-title">Web Development</div>
+                        <div class="service-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Porro officia nobis labore hic optio blanditiis
+                            ipsum
+                            quod.
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-title">Web Development</div>
+                        <div class="service-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Porro officia nobis labore hic optio blanditiis
+                            ipsum
+                            quod.
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="service-title">Web Development</div>
+                        <div class="service-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Porro officia nobis labore hic optio blanditiis
+                            ipsum
+                            quod.
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="contact-section" id="contact-me">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="contact-section-title">Contact Us</h2>
+                    <span class="mail-id">
+                        <i class="fa fa-envelope contact-icon"
+                            style="color: #e01515;"></i>
+                        contact@gmail.com
+                    </span>
+                    <span class="phone-number">
+                        <i class="fa fa-phone" aria-hidden="true"
+                            style="color:red contact-icon"></i> +91 1234567890
+                    </span>
+                    <div class="social-media-links">
+                        <i class="fa fa-facebook contact-icon" style="color:blue"></i>
+                        <i class="fa fa-twitter contact-icon" style="color:rgb(137, 137, 249)"></i>
+                        <i class="fa fa-linkedin contact-icon"
+                            aria-hidden="true" style="color:rgb(25, 70, 234)"></i>
+                    </div>
+                    <button class="btn resume-link">Download CV</button>
+                </div>
+                <div class="contact-form">
+                    <input type="text" class="client-name contact-box"
+                        placeholder="Enter your name">
+                    <input type="email" name id
+                        class="client-mail-id contact-box"
+                        placeholder="Enter your email-id">
+                    <input type="text" class="client-message contact-box"
+                        placeholder="Enter your message">
+                    <button class="btn" class="submit-message">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <script src="index.js"></script>
+    </body>
+</html>
