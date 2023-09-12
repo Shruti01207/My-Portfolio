@@ -90,6 +90,7 @@ nav {
     background-color: aliceblue;
     height: 80px;
     border-bottom: 1px solid green;
+    overflow: hidden;
 }
 
 label.logo {
@@ -392,6 +393,7 @@ a.active {
 .contact-section {
     background: aliceblue;
     color: #002147;
+    overflow: hidden;
 
 
 
@@ -444,6 +446,10 @@ a.active {
 
     font-size: 1.13rem;
     margin-bottom: 0.9em;
+}
+
+span.mail-id {
+    display: flex;
 }
 
 .contact-box {
@@ -547,15 +553,18 @@ a.active {
     margin-bottom: 1em;
 
 }
-.service-icon,.service-title{
-    text-align:center;
+
+.service-icon,
+.service-title {
+    text-align: center;
 }
 
 .service-icon i {
 
-    font-size:3rem;
-    color:#11a372;
+    font-size: 3rem;
+    color: #11a372;
 }
+
 /* footer section */
 
 .footer-text {
@@ -734,27 +743,6 @@ a.active {
 
 }
 
-@media screen and (max-width:400px) {
-    .skill-card {
-        width: 50%;
-    }
-
-    .social-media-links {
-        width: 26%;
-    }
-
-    .profession-text {
-        font-size: 0.9rem;
-    }
-
-    .intro-text {
-        font-size: 1.8rem;
-    }
-
-    .about-nav a {
-        font-size: 1.2rem;
-    }
-}
 
 @media screen and (max-width:320px) {
     .about-nav a {
@@ -822,4 +810,34 @@ a.active {
         height: 150px;
     }
 
+}
+
+@media screen and (max-width:400px) {
+    .skill-card {
+        width: 50%;
+    }
+
+    .social-media-links {
+        width: 26%;
+    }
+
+    .profession-text {
+        font-size: 0.9rem;
+    }
+
+    .intro-text {
+        font-size: 1.8rem;
+    }
+
+    .about-nav a {
+        font-size: 1.2rem;
+    }
+
+    .contact-container {
+        margin-left:0.5em;
+       
+    }
+    span.mail-id{
+        font-size:1rem;
+    }
 }
