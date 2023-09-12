@@ -744,11 +744,6 @@ span.mail-id {
 }
 
 
-@media screen and (max-width:320px) {
-    .about-nav a {
-        font-size: 1rem;
-    }
-}
 
 @media screen and (min-width:500px) and (max-width:940px) {
     .about-image {
@@ -834,10 +829,15 @@ span.mail-id {
     }
 
     .contact-container {
-        margin-left:0.5em;
+        margin-left:1.2em;
        
     }
     span.mail-id{
-        font-size:1rem;
+         font-size:1rem;
+    }
+}
+@media screen and (max-width:320px) {
+    .about-nav a {
+        font-size: 1rem;
     }
 }
