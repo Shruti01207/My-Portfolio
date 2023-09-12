@@ -6,7 +6,7 @@
     list-style: none;
     /* font-family: 'Lora', serif; */
     font-weight: 400;
-    font-family:'Ubuntu';
+    font-family: 'Ubuntu';
     letter-spacing: 0.1em;
     line-height: 1.5em;
 
@@ -44,6 +44,12 @@ body {
 
 }
 
+.bold-text {
+
+    font-weight: bold;
+}
+
+
 /*Typography*/
 
 .about-text,
@@ -51,7 +57,7 @@ body {
 .project-body {
 
     font-size: 1.13rem;
-    
+
 }
 
 
@@ -220,7 +226,7 @@ a.active {
     margin-bottom: 1em;
     font-family: 'Lora';
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .about-text {
@@ -371,7 +377,7 @@ a.active {
     border: 1px solid white;
     color: white;
     font-size: 1rem;
-    cursor:pointer
+    cursor: pointer
 }
 
 .project-demo:hover,
@@ -386,7 +392,7 @@ a.active {
 .contact-section {
     background: aliceblue;
     color: #002147;
-   
+
 
 
 }
@@ -399,8 +405,8 @@ a.active {
     padding-bottom: 4em;
     margin: 0 auto;
     width: 80%;
-    height:90%;
-    
+    height: 90%;
+
 }
 
 .contact-info,
@@ -410,7 +416,7 @@ a.active {
     justify-content: center;
     align-items: flex-start;
     width: 50%;
-   
+
 }
 
 
@@ -419,15 +425,17 @@ a.active {
     justify-content: flex-start;
     align-items: flex-start;
     /* border:2px solid red; */
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
-.contact-info{
-    width:40%;
-}
-.contact-form-container{
 
-    width:70%;
+.contact-info {
+    width: 40%;
+}
+
+.contact-form-container {
+
+    width: 70%;
 }
 
 .mail-id,
@@ -447,19 +455,19 @@ a.active {
     font-size: 1.13rem;
     border: 1px solid #002147;
     margin-bottom: 0.9em;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
 .client-message {
 
     height: 130px;
     text-align: start;
-    line-height:1.5;
+    line-height: 1.5;
 
 }
 
 .social-media-links {
-    width: 26%;
+    width: 16%;
     margin-bottom: 0.9em;
     display: flex;
     justify-content: space-between;
@@ -493,10 +501,10 @@ a.active {
 
 /* success-message */
 
-.success-message{
+.success-message {
 
-    color:green;
-    display:block;
+    color: green;
+    display: block;
 }
 
 /* service-section styling started */
@@ -539,18 +547,26 @@ a.active {
     margin-bottom: 1em;
 
 }
+.service-icon,.service-title{
+    text-align:center;
+}
 
+.service-icon i {
+
+    font-size:3rem;
+    color:#11a372;
+}
 /* footer section */
 
-.footer-text{
+.footer-text {
 
-    color:white;
+    color: white;
 
 }
 
-.footer-container{
+.footer-container {
 
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.2em 0;
@@ -613,7 +629,7 @@ a.active {
 
 
 
-@media screen and (max-width: 518px) and (min-width:400px ) {
+@media screen and (max-width: 518px) and (min-width:400px) {
 
     .intro-text {
         font-size: 2rem;
@@ -627,7 +643,29 @@ a.active {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
+    .about-image {
+        width: 30%;
+    }
+
+    .about-text {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-image {
+        width: 45%;
+        object-position: center center;
+    }
+
+    .about-text {
+
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:930px) {
     .about-main {
 
         flex-direction: column;
@@ -695,30 +733,41 @@ a.active {
     }
 
 }
+
 @media screen and (max-width:400px) {
     .skill-card {
         width: 50%;
     }
 
     .social-media-links {
-        width: 40%;
+        width: 26%;
     }
-    
-    .profession-text{
-        font-size:0.9rem;
+
+    .profession-text {
+        font-size: 0.9rem;
     }
-    .intro-text{
-        font-size:1.8rem;
+
+    .intro-text {
+        font-size: 1.8rem;
     }
-    .about-nav a{
-        font-size:1.2rem;
+
+    .about-nav a {
+        font-size: 1.2rem;
     }
 }
+
 @media screen and (max-width:320px) {
-   .about-nav a{
-       font-size:1rem;
-   }
+    .about-nav a {
+        font-size: 1rem;
+    }
 }
+
+@media screen and (min-width:500px) and (max-width:940px) {
+    .about-image {
+        padding: 2em 3em;
+    }
+}
+
 @media screen and (max-width:700px) {
 
     .contact-container {
