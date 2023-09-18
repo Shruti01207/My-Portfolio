@@ -622,7 +622,7 @@ span.mail-id {
     label.logo {
 
         padding: 0;
-        margin-left: 1em;
+        margin-left: 0.3em;
     }
 
     .card-container {
@@ -808,6 +808,9 @@ span.mail-id {
 }
 
 @media screen and (max-width:400px) {
+    header{
+        height:300px;
+    }
     .skill-card {
         width: 50%;
     }

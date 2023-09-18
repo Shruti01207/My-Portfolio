@@ -7,13 +7,13 @@ for (const link of navLinks) {
         checkbox.checked = false;
     });
 }
-
+changeProfession();
 
 function showDescription(type, e) {
 
     let aboutItems = document.getElementsByClassName('about-nav-text');
-    removeActiveClass('about-nav-link',e);
-    
+    removeActiveClass('about-nav-link', e);
+
     for (let i = 0; i < aboutItems.length; i++) {
 
         if (type != aboutItems[i].id) {
@@ -42,4 +42,14 @@ function removeActiveClass(anchorsClassName, e) {
     }
     navLink.className += ' active';
 
+}
+
+function changeProfession() {
+    const profession = document.getElementsByClassName('profession-text')[0];
+    const professions = ['Front End Developer', 'Back End Developer', 'Competitive Programmer', 'Tester'];
+    let idx = 0;
+    setInterval(() => {
+        profession.textContent = professions[idx++];
+        idx = idx % (professions.length);
+    }, 1000);
 }
