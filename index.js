@@ -46,7 +46,7 @@ function removeActiveClass(anchorsClassName, e) {
 
 function changeProfession() {
     const profession = document.getElementsByClassName('profession-text')[0];
-    const professions = ['Front End Developer', 'Back End Developer', 'Competitive Programmer', 'Tester'];
+    const professions = ['Frontend Developer', 'Backend Developer', 'Competitive Programmer', 'Tester'];
     let idx = 0;
     setInterval(() => {
         profession.textContent = professions[idx++];
