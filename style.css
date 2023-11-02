@@ -808,9 +808,10 @@ span.mail-id {
 }
 
 @media screen and (max-width:400px) {
-    header{
-        height:300px;
+    header {
+        height: 300px;
     }
+
     .skill-card {
         width: 50%;
     }
@@ -832,13 +833,15 @@ span.mail-id {
     }
 
     .contact-container {
-        margin-left:1.2em;
-       
+        margin-left: 1.2em;
+
     }
-    span.mail-id{
-         font-size:1rem;
+
+    span.mail-id {
+        font-size: 1rem;
     }
 }
+
 @media screen and (max-width:320px) {
     .about-nav a {
         font-size: 1rem;
